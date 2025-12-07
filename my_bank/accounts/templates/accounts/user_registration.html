@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://unpkg.com/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet" />
   </head>
   <body>
-
-
+    <h1>{{ request.user }}</h1>
 
     {% if form.non_field_errors %}
       {% for error in form.non_field_errors %}
@@ -168,8 +167,5 @@
         </form>
       </div>
     </div>
-
-
-
   </body>
 </html>
