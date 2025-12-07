@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %} {% endblock %}
+    <title>My Bank</title>
+    <link href="https://unpkg.com/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div>
+        {% block content %}
+        
+        {% endblock %}
+    </div>
+    
+</body>
+</html>
